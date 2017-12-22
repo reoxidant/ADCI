@@ -1,0 +1,98 @@
+.main__header h1 {
+    width: 500px;
+    display: inline;
+    color: grey;
+}
+
+.header__arrows {
+    display: inline;
+    width: 200px;
+    margin-left: 200px;
+}
+
+.arrow_left,
+.arrow_right {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.arrow_left>span,
+.arrow_right>span {
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.main__block1 {
+    width: 300px;
+    height: 260px;
+    border: 1px solid grey;
+    float: left;
+    text-align: left;
+}
+
+.main__block2 {
+    width: 300px;
+    height: 260px;
+    border: 1px solid grey;
+    float: left;
+    margin-left: 20px;
+}
+
+.img-block1,
+.img-block2 {
+    height: 200px;
+}
+
+.img-block1 {
+    background-image: url(../img/most.jpg);
+}
+
+.img-block2 {
+    background-image: url(../img/statua.jpg);
+}
+
+.main__block1>span,
+.main__block2>span {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.hover_block {
+    position: absolute;
+    top: 230px;
+    width: 170px;
+    background: #080503;
+    opacity: .8;
+    color: gold;
+}
+
+.add-img-block {
+    width: 300px;
+    height: 200px;
+    background: #080503;
+    opacity: 0;
+    visibility: hidden;
+    color: gold;
+    position: absolute;
+    left: 9px;
+    top: 67px;
+}
+
+.add-img-block>span {
+    display: inline-block;
+    margin: 30px 25px;
+    font-size: 16px;
+}
+
+
+.hover_block:hover+.add-img-block {
+    visibility: visible;
+    opacity: .8;
+    transition: opacity 1s linear;
+}

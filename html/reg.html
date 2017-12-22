@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация пользователя</title>
+</head>
+
+<body>
+    <header>
+        <h1>Регистрация пользователя</h1>
+    </header>
+    <main>
+        <form action="complete.html" method="POST">
+            <p>
+                Имя:
+                <br>
+                <input type="text" required>
+            </p>
+            <p>
+                Фамилия:
+                <br>
+                <input type="text" required>
+            </p>
+            <p>
+                Почта:
+                <br>
+                <input type="email" required>
+            </p>
+            <hr>
+            <p>
+                Курсы:
+                <br>
+                <label for="dru7">
+                    <input id="dru7" type="radio" name="val">Drupal 7
+                </label>
+                <br>
+                <label for="dru8">
+                    <input id="dru8" type="radio" name="val" checked>Drupal 8
+                </label>
+            </p>
+            <p>
+                Дополнительная информация:
+                <br>
+                <textarea name="text" id="" cols="40" rows="10">Знание PHP, CSS, Javascript и SQL</textarea>
+            </p>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </main>
+</body>
+<footer>13 минут.</footer>
+
+</html>
